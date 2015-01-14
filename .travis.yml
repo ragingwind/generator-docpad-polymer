@@ -1,0 +1,6 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-docpad-polymer' ]; then cd .. && eval "mv $currentfolder generator-docpad-polymer" && cd generator-docpad-polymer; fi
