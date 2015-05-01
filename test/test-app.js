@@ -10,7 +10,7 @@ describe('docpad-polymer:app', function () {
     helpers.run(path.join(__dirname, '../app'))
       .inDir(path.join(os.tmpdir(), './temp-test'))
       .withOptions({ 'skip-install': true })
-      .withPrompt({
+      .withPrompts({
         someOption: true
       })
       .on('end', done);
